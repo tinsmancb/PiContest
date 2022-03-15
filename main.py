@@ -7,7 +7,7 @@ mp.pretty = True
 
 def compute_pi():
   acc = 0
-  for n in range(int(1e10)):
+  for n in range(int(1e6)):
     acc += ((-1)**n)/(2*n+1)
 
   return 4*acc
