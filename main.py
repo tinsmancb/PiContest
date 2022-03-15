@@ -6,7 +6,7 @@ mp.dps = 100 # Increase this to compute more digits.
 mp.pretty = True
 
 def compute_pi():
-  return 4*sum([((-1)**n)/(2*n+1) for i in range(1000)])
+  return 4*sum([((-1)**n)/(2*n+1) for n in range(1000)])
     
 
 # DON'T MODIFY ANYTHING BELOW THIS LINE!
