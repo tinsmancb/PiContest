@@ -1,16 +1,13 @@
 from mpmath import *
-mp.dps = 100 # Increase this to compute more digits.
+mp.dps = 10000 # Increase this to compute more digits.
 # Note: this will result in code that takes longer to 
 # run, so make sure your algorithm works before 
 # changing this.
 mp.pretty = True
 
 def compute_pi():
-  acc = 0
-  for n in range(int(1e7)):
-    acc += ((-1)**n)/(2*n+1)
-
-  return 4*acc
+  n=1000
+  return 9801/(2*sqrt(2)*sum([factorial(4*k)*(1103+26390*k)/((factorial(k)**4)*(396**(4*k))) for k in range(n)]))
     
 
 # DON'T MODIFY ANYTHING BELOW THIS LINE!
