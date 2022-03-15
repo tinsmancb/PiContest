@@ -6,8 +6,12 @@ mp.dps = 100 # Increase this to compute more digits.
 mp.pretty = True
 
 def compute_pi():
-  # Implement your pi calculation here.
-  return 3 # The first digit is free.
+  acc = 0
+  for n in range(int(1e6)):
+    acc += ((-1)**n)/(2*n+1)
+
+  return 4*acc
+    
 
 # DON'T MODIFY ANYTHING BELOW THIS LINE!
 
