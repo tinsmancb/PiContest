@@ -10,7 +10,7 @@ def compute_pi():
   return 9801/(2*sqrt(2)*sum([factorial(4*k)*(1103+26390*k)/((factorial(k)**4)*(396**(4*k))) for k in range(n)]))
     
 
-# DON'T MODIFY ANYTHING BELOW THIS LINE!
+# SERIOUSLY: DON'T MODIFY ANYTHING BELOW THIS LINE!
 
 def main():
   pi_calc = compute_pi()
